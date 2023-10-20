@@ -27,3 +27,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: git push
+      - run: gh workflow run 'Update Dependencies' --repo 'Shummy1991/app-demo'
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKSHOP_PAT }}
