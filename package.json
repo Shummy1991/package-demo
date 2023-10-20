@@ -20,7 +20,8 @@
   "scripts": {
     "start": "storybook dev -p 6006",
     "build": "npx tsc --project tsconfig.build.json",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit"
   },
   "eslintConfig": {
     "extends": [
