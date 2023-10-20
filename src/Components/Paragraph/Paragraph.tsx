@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 
-const Paragraph = ({ children }) => (
+const Paragraph = ({ children }: PropsWithChildren) => (
   <p>{children}</p>
 );
 
